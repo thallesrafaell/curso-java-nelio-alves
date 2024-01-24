@@ -6,6 +6,12 @@ public class Alunos {
 
     private String curso;
 
+    public Alunos(int id, String nome, String curso){
+        this.id = id;
+        this.nome = nome;
+        this.curso = curso;
+    }
+
     public int getId() {
         return id;
     }
@@ -32,8 +38,9 @@ public class Alunos {
 
     @Override
     public String toString() {
-        return "Alunos: " +
-                ", nome:" + nome +
-                ", curso: " + curso ;
+        return  "ID: " + id + " nome: " + nome;
+
     }
+
+
 }

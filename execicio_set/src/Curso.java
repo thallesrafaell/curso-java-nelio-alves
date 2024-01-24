@@ -8,7 +8,7 @@ public class Curso {
 
     private int id;
 
-    private Set<Alunos> alunosMatriculados;
+    public Set<Alunos> alunosMatriculados  = new HashSet<>();
 
     public Curso (int id, String nome){
         this.id = id;
@@ -33,8 +33,8 @@ public class Curso {
     }
 
     public void matricularAluno(Alunos aluno){
-        this.alunosMatriculados  = new HashSet<>();
         alunosMatriculados.add(aluno);
+        System.out.println("Aluno" + aluno.toString() + "matriculado com Sucesso");
     }
 
     public Set<Alunos> getAlunosMatriculados(){
