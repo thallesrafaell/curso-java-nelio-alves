@@ -48,6 +48,6 @@ public class Main {
         System.out.println();
 
         System.out.println("Alex tem " + d.size() + " alunos matriculados nos seus cursos!");
-        
+
     }
 }
